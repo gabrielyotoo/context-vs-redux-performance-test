@@ -1,13 +1,30 @@
-## Running React on Repl.it
+# Context VS Redux render performance test
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+A project to check which one of them has the best render performance
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+The tests I did proved that React Context API has a better render performance. You can read further
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+> [Portuguese](https://gabrielyamamoto1.medium.com/context-api-vai-tornar-o-redux-obsoleto-n%C3%A3o-vai-eis-o-por-qu%C3%AA-2b337931decd)  
+> English: Soon in [my medium](https://medium.com/@gabrielyamamotoo).
 
-### Getting Started
-- Hit run
-- Edit [App.tsx](#src/App.tsx) and watch it live update!
+## Usage
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
+- Install all dependencies
+
+```shell
+npm install
+```
+
+- [Install React Dev Tools extension](https://react.dev/learn/react-developer-tools#browser-extension)
+
+- Run the project
+
+```shell
+npm run dev
+```
+
+- Access [http://localhost:5173/](http://localhost:5173/)
+
+- Open **Profiler** tab in dev tools
+
+- Trigger a render to check its duration
