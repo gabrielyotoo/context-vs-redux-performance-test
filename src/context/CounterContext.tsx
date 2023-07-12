@@ -6,7 +6,9 @@ interface CounterContextType {
   decrement: () => void;
 }
 
-const CounterContext = React.createContext<CounterContextType | undefined>(undefined);
+const CounterContext = React.createContext<CounterContextType | undefined>(
+  undefined
+);
 
 interface CounterProviderProps {
   children: React.ReactNode;
@@ -37,4 +39,3 @@ const CounterProvider: React.FC<CounterProviderProps> = ({ children }) => {
 };
 
 export { CounterContext, CounterProvider };
-
